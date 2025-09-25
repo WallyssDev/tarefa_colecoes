@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class ExercicioDois {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
-        System.out.println("Digite os nomes e o sexos da pessoa sendo m=Masculino e f=Femenino (EX: Pedro - m, Clara - f...): ");
+        System.out.println("Digite o nome e o sexos das pessoas sendo m=Masculino e f=Femenino (EX: Pedro - m, Clara - f...): ");
         String nome = s.nextLine();
         String[] nomesSexos = nome.split(",");
 //        Arrays.sort(nomesSexos);
@@ -17,7 +17,6 @@ public class ExercicioDois {
 
         for(String nomesSexo : nomesSexos){
             nomesSexo = nomesSexo.trim();
-            System.out.println(nomesSexo.trim());
             if(nomesSexo.toLowerCase().contains("- m")){
                 String[] partes = nomesSexo.split("-");
                 grupoMasculino.add(partes[0].trim());
